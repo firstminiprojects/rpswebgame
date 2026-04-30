@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors Pro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+				<link rel="stylesheet" href="./styles/style.css" />
+  <script src = "./script/script.js"></script>
+</head>
+<body>
+
+  <h1 class="title">RPS PRO</h1>
+  
+  <div class="button-container">
+    <button class="move-button" onclick="playGame('rock');" title="Rock">
+      <i class="fa-solid fa-hand-back-fist"></i>
+    </button>
+    <button class="move-button" onclick="playGame('paper');" title="Paper">
+      <i class="fa-solid fa-hand"></i>
+    </button>
+    <button class="move-button" onclick="playGame('scissors');" title="Scissors">
+      <i class="fa-solid fa-hand-scissors"></i>
+    </button>
+  </div>
+
+  <div class="result-container">
+    <p class="js-result"></p>
+    <p class="js-moves"></p>
+  </div>
+
+  <div class="score-board">
+    <div class="score-item"><span id="label-wins">Wins</span><div id="wins">0</div></div>
+    <div class="score-item"><span id="label-lost">Losses</span><div id="lost">0</div></div>
+    <div class="score-item"><span id="label-ties">Ties</span><div id="ties">0</div></div>
+  </div>
+
+  <button class="reset-button" onclick="resetGame()">
+    <i class="fa-solid fa-rotate-right"></i> Reset Game
+  </button>
+  
+</body>
+</html>
